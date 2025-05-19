@@ -1,0 +1,360 @@
+/* Base setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2b2f4a, #4e5d6c);
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem 4rem;
+  background: linear-gradient(135deg, #394867, #212a3e);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 40% 20%;
+  border-bottom-right-radius: 40% 20%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #ff6f61;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(255,111,97,0.6);
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Hint that image is clickable */
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0 0.3rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffb9a0;
+  margin-bottom: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+.buttons a {
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  margin: 0 0.7rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(255,111,97,0.5);
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.view-btn {
+  background: #ff6f61;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.view-btn:hover {
+  background: transparent;
+  border-color: #ff6f61;
+  color: #ff6f61;
+  box-shadow: none;
+}
+
+.download-btn {
+  background: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+}
+
+.download-btn:hover {
+  background: #ff6f61;
+  color: white;
+  box-shadow: 0 6px 20px rgba(255,111,97,0.7);
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* About me */
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ddd;
+  max-width: 720px;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+}
+
+/* Projects carousel */
+.project-carousel {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.projects-container {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 12px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the project carousel arrows */
+.scroll-btn {
+  display: none !important;
+}
+
+.project-card {
+  min-width: 280px;
+  background: linear-gradient(145deg, #31455f, #2a3b51);
+  border-radius: 18px;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(255, 111, 97, 0.6);
+}
+
+.project-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #e0e0e0aa;
+  margin-bottom: 1.1rem;
+  line-height: 1.4;
+}
+
+.project-card a {
+  font-weight: 700;
+  color: #ffb19f;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Skills horizontal scroll */
+.skills {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.8rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.skills::-webkit-scrollbar {
+  display: none;
+}
+
+.skill-item {
+  flex: 0 0 auto;
+  background: #394867;
+  border-radius: 14px;
+  padding: 1rem;
+  width: 90px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  color: #ffb19f;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: scale(1.1);
+}
+
+.skill-item img {
+  height: 45px;
+  margin-bottom: 0.6rem;
+  filter: drop-shadow(0 0 1px #ff6f61);
+}
+
+.skill-item span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  margin-top: 3rem;
+  color: #ddd;
+}
+
+/* Make contact-details a flex container to align items horizontally */
+.contact-details {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 2.5rem; /* space between items */
+  flex-wrap: nowrap; /* prevent wrapping */
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.contact-details span {
+  font-size: 1.1rem;
+  white-space: nowrap; /* prevent breaking inside each span */
+}
+
+.contact-details a {
+  color: #ffb19f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #ffa38b;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 3rem 0;
+  color: #ffb19f;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  header img {
+    width: 110px;
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-card {
+    min-width: 220px;
+  }
+
+  .skill-item {
+    width: 75px;
+    padding: 0.8rem;
+  }
+
+  .contact-details {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+}
+
+/* ----- Modal styles for image enlarging ----- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Dark transparent background */
+}
+
+/* Modal Content (the enlarged image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ff6f61;
+  transition: transform 0.3s ease;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #ff6f61;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.close:hover {
+  color: #ffa38b;
+}

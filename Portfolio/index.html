@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shantanu - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img id="profileImage" src="PROFILE PHOTO.jpg" alt="Profile photo" />
+    <h1>Welcome, I'm Shantanu</h1>
+    <h2>Aspiring Web Developer</h2>
+    <div class="buttons">
+      <a href="#projects" class="view-btn">View Projects</a>
+     <a href="Shantanu_Resume_Main.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">View Resume</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-title">About Me</div>
+    <p>
+ Full-stack web developer with a strong foundation in Computer Science and Engineering. Skilled in Data Structures, Algorithms, Operating Systems, and DBMS, with hands-on experience in React.js, Node.js, and MongoDB. 
+ Committed to building scalable and efficient digital solutions.
+    </p>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="project-carousel">
+    <button class="scroll-btn left" onclick="scrollProjects('left')">&#8678;</button>
+
+    <div class="projects-container" id="projectsContainer">
+         <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A React based weather forecasting application</p>
+        <a href="https://github.com/ShantanuDEV143/Weather-app/" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Notification Tracker</h3>
+        <p>A MongoDB based weather forecasting application</p>
+        <a href="https://github.com/yourusername/notification-tracker" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Spotify Clone</h3>
+        <p>A web application modelled after Spotify, built using the MERN stack</p>
+        <a href="https://github.com/yourusername/spotify-clone" target="_blank">GitHub</a>
+      </div>
+
+      <!-- Add more project cards here -->
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollProjects('right')">&#8680;</button>
+  </div>
+</section>
+<section id="skills">
+  <div class="section-title">Skills & Tools</div>
+  <div class="skills">
+    <div class="skill-item">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" title="JavaScript Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <span>JavaScript</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" title="ReactJS Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <span>ReactJS</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" title="NodeJS Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+        <span>NodeJS</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" title="ExpressJS Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS" />
+        <span>ExpressJS</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" title="MySQL Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        <span>MySQL</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" title="Git Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+        <span>Git</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" title="HTML5 Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <span>HTML5</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" title="CSS3 Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <span>CSS3</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://www.kernel.org/" target="_blank" rel="noopener noreferrer" title="Linux Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+        <span>Linux</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="VS Code Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+        <span>VS Code</span>
+      </a>
+    </div>
+    <div class="skill-item">
+      <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" title="Jupyter Notebook Official">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" />
+        <span>Jupyter Notebook</span>
+      </a>
+    </div>
+  </div>
+</section>
+ <section id="contact">
+  <div class="section-title">Contact</div>
+  <div class="contact-details">
+    <span>📧 <a href="mailto:kr.shantanu143@gmail.com">kr.shantanu143@gmail.com</a></span>
+    <span>🔗 <a href="https://www.linkedin.com/in/shantanu-182b73278" target="_blank" rel="noopener">linkedin.com/in/Shantanu</a></span>
+    <span>🐦 <a href=" https://x.com/KumarSh40635204?t=D75JHNfw0Hf3gHTU-Cyv1A&s=08 " target="_blank" rel="noopener">Twitter</a></span>
+    <span>📱 <a href="tel:+91 9507211778">+91-9507211778</a></span>
+  </div>
+  <!-- Modal for enlarged image -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg" alt="Enlarged Profile Photo" />
+</div>
+</section>
+  <footer>
+    &copy; 2025 Shantanu. All rights reserved.
+  </footer>
+</body>
+</html>
